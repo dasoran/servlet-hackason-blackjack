@@ -5,14 +5,14 @@
    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
   version="2.4">
   <servlet>
-    <servlet-name>helloworld</servlet-name>
-    <servlet-class>org.docksidestage.HelloWorld</servlet-class>
+    <servlet-name>game</servlet-name>
+    <servlet-class>org.docksidestage.GameMain</servlet-class>
   </servlet>
 
 	<!-- mapping -->
   <servlet-mapping>
-    <servlet-name>helloworld</servlet-name>
-    <url-pattern>/helloworld</url-pattern>
+    <servlet-name>game</servlet-name>
+    <url-pattern>/game</url-pattern>
   </servlet-mapping>
 
 
