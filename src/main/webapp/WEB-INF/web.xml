@@ -5,15 +5,37 @@
    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
   version="2.4">
   <servlet>
-    <servlet-name>game</servlet-name>
+    <servlet-name>gamemain</servlet-name>
     <servlet-class>org.docksidestage.GameMain</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>gameentrance</servlet-name>
+    <servlet-class>org.docksidestage.GameEntrance</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>gamewelcome</servlet-name>
+    <servlet-class>org.docksidestage.GameWelcome</servlet-class>
   </servlet>
 
 	<!-- mapping -->
   <servlet-mapping>
-    <servlet-name>game</servlet-name>
+    <servlet-name>gamemain</servlet-name>
+    <url-pattern>/gamemain</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>gameentrance</servlet-name>
     <url-pattern>/game</url-pattern>
   </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>gamewelcome</servlet-name>
+    <url-pattern>/gamewelcome</url-pattern>
+  </servlet-mapping>
+  
 
 
 </web-app>
